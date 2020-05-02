@@ -1,4 +1,4 @@
-package step_Def;
+package stepdef;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -19,12 +19,12 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import junit.framework.Assert;
-import page_Factory.Finalpf;
+import page_Factory.Finalpagefactory;
 
 public class LoginStepdef {
 	    static JavascriptExecutor js;
 		static WebDriver driver;
-		static Finalpf pf;// have to create in order to call from PageFactory page
+		static Finalpagefactory pf;// have to create in order to call from PageFactory page
 		static Actions mouseover;
 		static WebDriverWait explicit;
 		
@@ -50,7 +50,7 @@ public class LoginStepdef {
 		
 		
 		
-		pf = PageFactory.initElements(driver, Finalpf.class);
+		pf = PageFactory.initElements(driver, Finalpagefactory.class);
 		js = (JavascriptExecutor) driver;
 
 	}
